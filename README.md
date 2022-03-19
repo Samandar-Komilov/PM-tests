@@ -1,2 +1,3 @@
-# sam-solar-system
-This is a repository of my portfolio that will be created by the time in the future!
+# PM-tests
+
+This repository is used to reserve my Physics and Mathematics tests!
