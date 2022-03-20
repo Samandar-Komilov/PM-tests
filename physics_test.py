@@ -1,5 +1,30 @@
 import random
 
+# ---| [7] Elektrostatika \---
+
+
+elektr_zaryadi = ["Elektrostatika nimani o'rganadi?","Junga ishqalangan qahrabo/shisha tayoqchasi qanday zaryadlanadi?","Shisha tayoqchani shoyiga ishqalaganda shoyi qanday zaryadlanadi?","Elektromagnit o'zaro ta'sir nima?","Bir xil ishorali zaryadlar bir-biriga qanday ta'sir qiladi?","Atom qanday zarralardan tashkil topgan?","Atom yadrosi tarkibi qanday?","Elektron/Proton/Neytron zaryadi/massasi nimaga teng?","Zaryadning karralilik qonuni nima?","Yopiq sistema nima?","Zaryadning saqlanish qonuni nima?","Ebonit/Shisha tayoqchasi musbat zaryadlanganda uning massasi qanday o'zgaradi?"]
+
+kulon_qonuni = ["Kulon qonunini ta'riflang.","Kulon qonunidagi koeffitsiyent qiymati va birligi","Elektr doimiysi nimaga teng?","1 C ta'rifi - ?","Elektrostatik maydon nima?","Elektromagnit maydon nima?","Zaryad sirt zichligi - ?","Zaryad sirt zichligi/Elektr doimiysi/Kulon qonunidagi koeffitsiyent birligini XBS dagi asosiy birliklar orqali ifodalang."]
+
+elektr_maydon = ["Elektr maydon kuchlanganligi nima?","Nuqtaviy zaryad elektr maydon kuchlanganligi nima?","Kuchlanganlik chiziqlari - ?","Musbat/Manfiy nuqtaviy zaryadning kuchlanganlik chiziqlari","Kuchlanganlik chiziqlari kesishadimi?","Maydon kuchlanganligi birligi - ?","Maydon superpozitsiya prinsipi qanday?","Maydon kuchlanganliklari qanday qo'shiladi?","Ikkita bir xil ishorali nuqtaviy zaryadlar orasidagi maydon kuchlanganligi nolga teng bo'lgan nuqta - ?","Elektr maydon kuchlanganligi birligini XBS dagi asosiy birliklar orqali ifodalang.","Zaryadlangan parallel platinka orasidagi kuch chiziqlari qanday?","Cheksiz tekislik va tekisliklar orasidagi elektr maydon kuchlanganligi","Bir jinsli maydon nima?","Vertikal yo'nalishdagi elektr maydonida zaryadning harakat tenglamasi nima?","Zaryadlangan shar sirtidagi/ichidagi elektr maydon kuchlanganligi qanday?","Zaryadlangan shardan H masofa uzoqlikdagi maydon kuchlanganligi qanday?","Musbat zaryad maydoniga musbat zaryad kiritsak, maydon qanday o'zgaradi?"]
+
+elektr_maydonda_otkazgichlar_dielektriklar = ["Bir jinsli elektr maydonga kiritilgan otkazgichning ichida elektr maydon kuchlanganligi qanday topiladi?","Elektr zaryadlari otkazgich bo'ylab qanday taqsimlanadi?","Elektrostatik induksiya hodisasi nima?","Oval/Kub/Shar,Silindr shaklidagi bir butun metall jismga zaryad berilganda zaryad qayerda va qanday taqsimlanadi?","Dielektriklar nima?","Dielektrik singdiruvchanlik nima?","Qutblanish nima?","Qutbli va qutbsiz dielektrik nima?","Elektr dipoli nima?","Dipol momenti nima?","Debay - qanday kattalik belgisi?","Politilien/Osh tuzi/Distillangan suv qanday dielektrik turiga kiradi?"]
+
+potensial = ["Elektr maydonida nuqtaviy zaryadni ko'chirishda bajarilgan ish nima?","Elektrostatik maydonda zaryadni yopiq kontur bo'ylab ko'chirishda bajarilgan ish qanday topiladi?","Konservativ kuch nima?","Ikki nuqtaviy zaryad potensial energiyasi - ?","Potensial energiya va ish orasidagi bog'liqlik qanday?","Potensial va potensiallar ayirmasi nima? Birligi qanday?","Potensial qanday kattalik?","Qaysi kattalik elektr maydonni energiya tomonidan xarakterlaydi?","Nuqtaviy zaryad potensiali","Ikkita har xil ishorali nuqtaviy zaryadlar orasidagi maydon potensiali nolga teng bo'lgan nuqta - ?","Potensiallar qanday qo'shiladi?","Maydon superpozitsiya prinsipi natijasi - ?","Potensiallar ayirmasi birligini XBS dagi asosiy birliklar orqali ifodalang.","Zaryadlangan shar ichidagi/sirtidagi/tashqarisidagi potensial qanday?","Qaysi shart berilganda sharlardan zaryad bir-birga o'tadi?","Zaryadlangan sharlar tutashtirilganda biridan ikkinchisiga o'tgan zaryad miqdori qanday topiladi?","Bir xil potensialga ega bo'lgan bir nechta shar qo'shilishidan hosil bo'lgan potensial qanday topiladi?","Bir xil potensialga ega bo'lgan bir nechta shar qo'shilishidan hosil bo'lgan katta sharni potensiali qanday topiladi?"]
+
+potensiallar_ayirmasi = ["Potensiallar ayirmasi va maydon kuchlanganligi orasidagi bog'liqlik qanday?","Ekvipotensial sirt nima?","Ekvipotensial sirt bo'ylab zaryadni ko'chirishda bajarilgan ish qanday topiladi?","Kuchlanganlik chiziqlari ekvipotensial sirt bilan qanday burchak tashkil qiladi?","Nuqtaviy zaryadning ekvipotensial sirti - ?","Zaryadlangan tekislikning ekvipotensial sirti"]
+
+otkazgichning_elektr_sigimi = ["Elektr sig'imi va uning birligi - ?","Yakkalangan o'tkazgich - ?","Shar elektr sig'imi - ?","Elektr sig'imi birligini XBS dagi asosiy birliklar orqali ifodalang."]
+
+kondensator_elektr_sigimi = ["Kondensator nima?","Yassi/Silindrik/Sferik kondensator elektr sigimi qanday?","Yassi kondensator qoplamalari orasidagi potensiallar farqi/elektr maydon kuchlanganligi qanday?","Yassi kondensatorning plastinkalariga doimiy kuchlanish berilganda shu plastinkalar orasidan uchib o'tayotgan elektron qanday trayektoriya chizadi?"]
+
+kondensator_ketma_ket_parallel = ["Kondensator parallel/ketma-ket ulash sxemasi qanday?","Kondensatorlar parallel/ketma-ket ulanganda umumiy sig'im/kuchlanish/zaryad qanday?","Ikki zaryadlangan kondensator bir-biri bilan tutashtirilganda umumiy kuchlanish qanday topiladi?","Kondensatorlarning teskari qutblari bilan ulaganda natijaviy zaryad qanday o'zgaradi?","Sig'imlari va kuchlanishlari berilgan kondensatorlar, teskari qutblari bilan ulansa natijaviy kuchlanish qanday topiladi?"]
+
+kondensator_elektr_maydon_energiyasi = ["Kondensatorning asosiy xossalari nima?","Kondensator elektr maydon energiyasi nima?","Kondensator elektr maydon energiya zichligi nima?","Kondensatorning elektr maydoni uning qayerida joylashadi?","Sig'imlari va kuchlanishlari berilgan kondensatorlar teskari/tog'ri qutblari bilan ulansa, umumiy energiyasining o'zgarishi qanday topiladi?","Sig'imlari va zaryadlari berilgan kondensatorlar teskari qutblari bilan ulansa, umumiy energiyasining o'zgarishi qanday topiladi?"]
+
+elektrostatika = elektr_zaryadi
+
 
 # ---| [8] O'zgarmas elektr toki \---
 
@@ -80,18 +105,19 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 #***********************************************
 
 savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar
-true_count,false_count = 0,0
+true_count = 0
+false_count = 0
 
-for i in range(len(savollar)-1):
+for i in range(30):
     x = random.randint(0,len(savollar)-1)
     print("")
     print(savollar[x])
     print("")
     javob = input("Topsangiz 1, aks holda 0 ni bosing: ")
-    if javob == 1:
+    if javob == "1":
         true_count+=1
         continue
-    else:
+    if javob == "0":
         false_count+=1
         continue
 
