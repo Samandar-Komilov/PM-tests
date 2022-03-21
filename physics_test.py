@@ -1,6 +1,67 @@
 import random
 
-# ---| [7] Elektrostatika \---
+# ---| [1] KINEMATIKA \---
+
+
+#
+
+
+# ---| [2] DINAMIKA \---
+
+
+#
+
+
+# ---| [3] STATIKA \---
+
+
+#
+
+
+# ---| [4] SUYUQLIK VA GAZLAR MEXANIKASI \---
+
+
+#
+
+
+# ---| [5] MOLEKULYAR FIZIKA \---
+
+
+#
+
+
+# ---| [6] TERMODINAMIKA \---
+
+
+#
+
+
+# ---| [7] QATTIQ VA SUYUQ JISMLAR MEXANIKASI \---
+
+
+#
+
+
+# ---| [8] TEBRANISHLAR \---
+
+mexanik_tebranishlar = ["Tebranish nima?","Tebranish davri nima?","Tebranish chastotasi nima?","Davr va chastota bog'liqligi qanday?","SIklik chastota nima?","1 HZ ta'rifi - ?","Tebranish amplitudasi nima?","Siljish nima?","Garmonik tebranishlar nima?","Matematik mayatnik nima?","Prujinali mayatnik nima?","Bir davr ichidagi yo'l nima deyiladi?"]
+
+matematik_mayatnik = ["Matematik mayatnik nima?","Matematik mayatnikda to'la tebranish nima?","Matematik mayatnik qanday kuch ta'sirida tebranadi?","Matematik tebranish davri, chastotasi va siklik chastotasi formulalari qanday?","Mat.mayatnikda siljish nima?","Mat.mayatnikda amplituda nima?","Mat.Mayatnik to'la energiyasi nimalarga bog'liq?","Vaznsizlik holatida mat.mayatnik davri, chastotasi, siklik chastotasi qanday bo'ladi?","Vaznsizlik nima?","Erkin tushish tezlanishi qanday topiladi?","Mat.mayatnikda l,m,A berilgan holatida tezlik amplituda qiymati, tezlanish amplituda qiymati, maksimal kinetik energiyalari qanday topiladi?","Matematik mayatnikda og'irlik kuchining tashkil etuvchilari nima?","Agar matematik mayatnikni Oydan Yerga ko'chirilsa uning tebranish davri qanday o'zgaradi?","Tubida teshigi bor chelak suvga to'ldirilgan va cho'zilmas arqonga bog'langan holda tebranmoqda. Chelakdagi suv tomib tamom bo'lguncha uning tebranish davri qanday o'zgaradi?"]
+
+prujinali_mayatnik = ["Prujinali mayatnikda siljish nima?","Prujinali mayatnikda amplituda nima?","Prujinali mayatnik nima?","Prujinali mayatnikda to'la tebranish nima?","Prujinali mayatnik qaysi kuch yordamida tebranadi?","Prujinali mayatnik davri va chastotasi qanday kattaliklarga bog'liq?","Prujinali mayatnik to'la energiyasi qanday topiladi?","Guk qonuni ta'rifi - ?","Bikirlik nima?","Parallel va ketma-ket ulanganda prujina bikrliklari qanday topiladi?","Yung moduli nima?","Bikrlik Yung moduliga qanday bog'liq?","Prujinali mayatnikda potensial va kinetik energiya qanday topiladi?","Prujinali mayatnik qachon W_kinetik_max ga ega bo'ladi?","Potensial energiya qachon eng katta qiymatni qabul qiladi?","Vaznsizlik holatida qumli/prujinali/mayatnikli soatdan foydalanib bo'ladimi?"]
+
+garmonik_tebranishlar = ["Garmonik tebranishlarda siljish nima?","Garmonik tebranishlarda amplituda nima?","Garmonik tebranishlar nima?","Garmonik tebranish tenglamasini yozing.","Boshlang'ich faza nima?","Tebranish fazasi nima?","Garmonik tebranishlarda tezlik qanday topiladi? Tezlikning amplituda qiymati nimaga teng?","Garmonik tebranishlarda tezlanish qanday topiladi? Tezlanishning maximum qiymati nimaga teng?","Tebranuvchi jismning xususiy xossasi nima?","Garmonik tebranishda nuqta tezligi qaysi qonun asosida o'zgaradi?","Matematik mayatnikda tezlanish o'zgarish qonunini (a=(-g/l)*x keltirib chiqaring.","Garmonik teblanishlarda Nyutonning ikkinchi qonuni - ?","a = (-k/m)*x = -(w_0)^2*x formulani tushuntiring va isbotlang.","Jismni tebranma harakatga keltiruvchi kuch moduli va yo'nalishi qanday o'zgaradi?","Tebranayotgan jismning kinetik energiyasi qachon eng katta qiymatga erishadi?","Garmonik tebranishlarda to'la mexanik energiya qanday topiladi?","Jism garmonik tebransa, uning tezlanishi/kinetik energiyasi qanday o'zgaradi?","Tebranayotgan jismning potensial/kinetik energiyasi qanday vaziyatda eng katta bo'ladi?"]
+
+erkin_va_majburiy_tebranishlar = ["Erkin tebranishlar nima?","Erkin tebranishlar garmonik tebranishlar qonuniyatlariga bo'ysunadimi?","Majburiy tebranish nima?","Rezonans nima?","Rezonans chiziqlari nima?","Rezonans ishqalanishga qanday bog'liq?","Rezonans texnikada qanday qo'llaniladi? (4 tagacha misol)","Ichki va tashqi kuchlar nima?","Ideal tebranish sistemasi nima?","Jism qiya tekislikdan sirpanib tushayotganda tezlanish massaga qanday bog'liq?"]
+
+tolqinlar = ["To'lqinlar nima?","Bo'ylama to'lqin nima? Misollar keltiring.","Ko'ndalang to'lqin nima? Misollar keltiring.","Bir davr ichidagi yo'l deb nimaga aytiladi?","To'lqin uzunligi uning davriga qanday bog'liq?","To'lqin tezligini topish formulasi qanday?","Bir-biridan har xil masofada tebranayotgan to'lqinlarning fazalar farqi qanday topiladi?","Qattiq jismlarda qanday mexanik to'lqinlar tarqaladi?","Ko'ndalang mexanik to'lqinlar qanday muhitlar ichida tarqala oladi?","Musiqa asboblari torlarida/suv sirtida hosil bo'lgan to'lqinlar bo'ylamami yoki ko'ndalang?"]
+
+tovush_tolqinlari = ["Tovush to'lqinlariga misollar keltiring.","Akustika fizikaning qanday bo'limi?","Tovush to'lqinlari chastotasi qanday oraliqda joylashgan?","Tovush nimadan paydo bo'ladi?","Gazlardan qanday to'lqinlar tarqaladi?","Havodagi tovush to'lqinlari qanday to'lqin?","Tovush to'lqinlarining tezligi qanday moddalarda eng katta?","Tovush intensivligi yoki tovush kuchi nima?","Tovush bosimi nima?","Tovush bosimi o'rtacha hisobda necha Pa?","Tovush qattiqligi nimaga bog'liq?","Aks sado nima?","Tovush lokatsiyasi nima?","Tovush tembri nima?","Dopler effekti nima?","Radiolokatordan obyektgacha masofa qanday aniqlanadi?","Tovush bir muhitdan boshqasiga o'tganida qanday kattalik o'zgarmaydi?","Tovush balandligi nimaga bog'liq?","Vakuumda tovush yuzaga keladimi?","Tovushni yuzaga keltirib, uni sezishni qanday shartlari mavjud?","Gazlarda tovush tezligi temperaturaga qanday bog'liq?","G'ovak jismlarda tovush qanday tarqaladi?","Musiqiy ton nima?","Tovushning asosiy toni nima?","Oberton nima?","Shovqin nima?","Tovush energiyasi amplituda va chastotaga qanday bog'liq?","Tovush balandligi nima?","Tovush intensivligi birligi nima?","Inson qulog'i seza oladigan intensivlik qancha?","Intensivlik masofaga qanday bog'liq?","Ultratovush/Infratovush to'lqinlari diapazoni qanday?","Suyuqlik/Gazlardagi ultratovush to'lqinlari bo'ylamami yoki ko'ndalang?","Yerdan 100 000 km uzoqlikdagi sun'iy yo'ldosh portladi. Uning ovozi Yerga eshitiladimi?","Marsda portlash sodir bo'ldi. Uning ovozi Yerga eshitiladimi?"]
+
+tebranishlar = mexanik_tebranishlar
+
+
+# ---| [9] ELEKTROSTATIKA \---
 
 
 elektr_zaryadi = ["Elektrostatika nimani o'rganadi?","Junga ishqalangan qahrabo/shisha tayoqchasi qanday zaryadlanadi?","Shisha tayoqchani shoyiga ishqalaganda shoyi qanday zaryadlanadi?","Elektromagnit o'zaro ta'sir nima?","Bir xil ishorali zaryadlar bir-biriga qanday ta'sir qiladi?","Atom qanday zarralardan tashkil topgan?","Atom yadrosi tarkibi qanday?","Elektron/Proton/Neytron zaryadi/massasi nimaga teng?","Zaryadning karralilik qonuni nima?","Yopiq sistema nima?","Zaryadning saqlanish qonuni nima?","Ebonit/Shisha tayoqchasi musbat zaryadlanganda uning massasi qanday o'zgaradi?"]
@@ -23,10 +84,10 @@ kondensator_ketma_ket_parallel = ["Kondensator parallel/ketma-ket ulash sxemasi 
 
 kondensator_elektr_maydon_energiyasi = ["Kondensatorning asosiy xossalari nima?","Kondensator elektr maydon energiyasi nima?","Kondensator elektr maydon energiya zichligi nima?","Kondensatorning elektr maydoni uning qayerida joylashadi?","Sig'imlari va kuchlanishlari berilgan kondensatorlar teskari/tog'ri qutblari bilan ulansa, umumiy energiyasining o'zgarishi qanday topiladi?","Sig'imlari va zaryadlari berilgan kondensatorlar teskari qutblari bilan ulansa, umumiy energiyasining o'zgarishi qanday topiladi?"]
 
-elektrostatika = elektr_zaryadi
+elektrostatika = elektr_zaryadi + kulon_qonuni + elektr_maydon + elektr_maydonda_otkazgichlar_dielektriklar + potensial + potensiallar_ayirmasi + otkazgichning_elektr_sigimi + kondensator_elektr_sigimi + kondensator_ketma_ket_parallel + kondensator_elektr_maydon_energiyasi
 
 
-# ---| [8] O'zgarmas elektr toki \---
+# ---| [10] O'ZGARMAS ELEKTR TOKI \---
 
 
 tok_kuchi = ["Elektrodinamika nima?","O'zgarmas tok nima?","Tok kuchi nima?","Tok zichligi nima?","Elektr toki ta'sirlari qanday?","Elektr tokini mavjud bo'lish shartlari","Tok kuchi qanday kattalik?","Tok zichligi qanday kattalik?","Zaryad konsentratsiyasi berilgan holda tok zichligini topish formulasi qanday?","Metall o'tkazgich ko'ndalang kesim yuzidan o'tgan elektronlar sonini topish formulasi qanday?","Metallarda zaryadning tartibli harakat tezligini topish formulasi qanday?"]
@@ -52,7 +113,7 @@ toliq_joul_lens = ["O'zgarmas tokning quvvati (butun zanjir uchun) qanday topila
 ozgarmas_elektr_toki = tok_kuchi + zbq_om_qonuni + qarshilik + ketma_ket_va_parallel_ulash + shunt_ulash + zbq_joul_lens + ketma_ket_va_parallel_ish_quvvat + toliq_om_qonuni + tok_manbalarini_kk_pll_ulash + toliq_joul_lens
 
 
-# ---| [9] Turli muhitlarda elektr toki \---
+# ---| [11] TURLI MUHITLARDA ELEKTR TOKI \---
 
 
 metallar = ["Metallarda asosiy tok tashuvchilar nima?","Metallarda qarshilikning temperaturaga bog'liqligi?","O'ta-o'tkazuvchanlik?","Volt-Amper xarakteristikasi nima?","Qarshilikning termik koeffitsiyenti nima?","Metallarda elektr tokining tarqalish tezligi nima bilan aniqlanadi?","Metallarda Volt-Amper xarakteristikasi qanday?"]
@@ -68,7 +129,7 @@ yarimotkazgich = ["Yarimotkazgichlarda asosiy tok tashuvchilari nima?","Yarimotk
 turli_muhitlarda_elektr_toki = metallar + elektrolitlar + vakuum + yarimotkazgich
 
 
-# ---| [10] Elekromagnit hodisalar \---
+# ---| [12] ELEKTROMAGNIT HODISALAR \---
 
 
 magnit_maydon = ["Doimiy magnit nima?","Magnit qutblari nima?","Yerning magnit maydoni qanday yo'nalgan?","Kompas nima?","Har xil magnit qutblari bir-biriga qanday ta'sir ko'rsatadi?","Qanday magnit qutblari bir-biridan qochadi?","Elektr toki atrofida qanday maydon mavjud?","Magnit maydonni aniqlagan odam kim?","Qachon parallel toklar bir-biridan qochadi va qachon bir-biriga tortiladi?","Amper tajribasi qanday edi?","Sinov konturi nima?","Parma qoidasi nima?","Magnit momenti nima?","Magnit maydon induksiyasi nima?","Tokli ramkaga ta'sir etuvchi kuch momenti qanday topiladi?","M = BISsin@ da @ qanday burchak?","Induksiya chiziqlari nima?","Induksiya chiziqlari yopiqmi yoki ochiqmi?","Magnit maydon kuchlanganligi nima?","Magnit maydon kuchlanganligi birligi va formulasi qanday?","Magnit maydon kuchlanganligi va induksiya orasida qanday bog'liqlik mavjud?","Tabiatda magnit zaryadlari mavjudmi?","Konturning magnit momenti nimani ko'rsatadi?","Konturning magnit momentining yo'nalishi qanday aniqlanadi?","Harakatsiz zaryad atrofida magnit maydon hosil bo'ladimi?","Magnit induksiya chiziqlari magnit ichida qanday yo'nalishga ega?","Magnit induksiya chiziqlari magnit tashqarisida qanday yo'nalishga ega?","Quyosh shamoli nima?","Qutb yog'dusi qanday vujudga keladi?","Magnitosfera deb nimaga aytiladi?","Parallel toklarning o'zaro ta'siri kuchi formulasi nima?","Parallel toklarning o'zaro ta'sir kuchi nimalarga bog'liq?","Magnit doimiysi nima?","Nisbiy magnit singdiruvchanlik nima?","1 Amper ni ta'riflang.","Ersted tajribada nimani aniqlagan?","Magnit doimiysi birligini XBS dagi asosiy birliklar orqali ifodalang.","Magnit maydon induksiya birligini XBS dagi asosiy birliklar orqali ifodalang.","Magnit maydon kuchlanganligi birligini XBS dagi asosiy birliklar orqali ifodalang","Magnit maydonning elektr maydoni bilan bog'liqligini tajribada birinchi bo'lib kim aniqlagan?","Gorizontal o'q atrofida erkin aylana oladigan magnit strelka deyarli tik turib qoldi, bunda uning shimoliy uchi tepada joylashdi. Strelka Yerning qaysi joyida joylashgan?","Kompasning magnit strelkasining o'qi magnit meridianiga tik ravishda gorizontal o'rnatildi. Bunda strelka aniq gorizontal vaziyatni oldi. Kompas qayerda joylashgan?"]
@@ -94,8 +155,40 @@ magnit_maydon_energiyasi = []
 elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasir_qiluvchi_kuch + bio_salvar_laplas_qonuni + lorens_kuchi + magnit_oqimi + muhit_magnit_singdiruvchanligi + elektromagnit_induksiya + lens_qoidasi_ozinduksiya + induktivlik + magnit_maydon_energiyasi
 
 
-#.....
+# ---| [13] ELEKTROMAGNIT TEBRANISHLAR \---
 
+
+#
+
+
+# ---| [14] GEOMETRIK OPTIKA \---
+
+
+#
+
+
+# ---| [15] TO'LQIN OPTIKASI \---
+
+
+#
+
+
+# ---| [16] NISBIYLIK NAZARIYASI \---
+
+
+#
+
+
+# ---| [17] YORUG'LIK KVANTI \---
+
+
+#
+
+
+# ---| [18] ATOM VA YADRO FIZIKASI \---
+
+
+#
 
 
 
@@ -104,11 +197,12 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 #***********************************************
 #***********************************************
 
-savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar
+savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki
 true_count = 0
 false_count = 0
+test = 30
 
-for i in range(30):
+for i in range(test):
     x = random.randint(0,len(savollar)-1)
     print("")
     print(savollar[x])
@@ -121,4 +215,7 @@ for i in range(30):
         false_count+=1
         continue
 
-print("To'g'ri javoblar:",true_count,'\n', "Noto'g'ri javoblar:",false_count)
+print("Jami savollar soni:",len(savollar))
+print("Test savollari soni:",test)
+print("To'g'ri javoblar:",true_count)
+print("Noto'g'ri javoblar:",false_count)
