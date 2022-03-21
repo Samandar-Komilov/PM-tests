@@ -20,14 +20,35 @@ import random
 
 # ---| [4] SUYUQLIK VA GAZLAR MEXANIKASI \---
 
+bosim = ["Bosim nima? birligi va formulasini yozing.","Bosim qanday kattalik?","Qattiq jismlarda bosim qanday yo'nalishda uzatiladi?"]
 
-#
+paskal_qonuni = ["Suyuqlik va gazlarda bosimning uzatilish mexanizmini qaysi qonun xarakterlaydi?","Paskal qonuni ta'rifi qanday?","Gidravlik press nima? formulasi qanday?","Gidravlik press ishlash prinsipi qaysi qonunga asoslangan?","Porshenlarning siljish masofasi nisbati ularning kuchlar/yuzalar nisbatiga qanday bog'liq?","Real gidravlik pressning ideal gidravlik pressdan farqi qanday?"]
+
+gidrostatik_bosim = ["Gidrostatik bosim nima? U idish shakliga bog'liqmi? U qanday kattaliklarga bog'liq? Formulasini yozing.","Gidrostatik paradoks nima?","Idish qanday shaklda bo'lganda suyuqlikning idish tubiga ta'sir etadigan bosim kuchi shu idishdagi suyuqlikning og'irligiga teng/katta/kichik bo'ladi?","Manometr nima?","Tutash idish nima?","Tutash idishlar qonuni va formulasi - ?"]
+
+atmosfera_bosimi = ["Atmosfera nima?","Atmosfera tarkibining qancha qismini kislorod tashkil qiladi?","Nima sababdan atmosfera bosimi yuzaga keladi?","Atmosfera bosimining mavjudligini kim aniqlagan?","Torichelli tajribasini tushuntirib bering.","Torichelli tajribasi qaysi qonunga asoslangan?","Normal atmosfera bosimi nima?","1 mm simob ustuni necha Pa?","1 atmosfera bosimi nima?","Dengiz sathidan har 12 metrda atmosfera bosimi qanchaga kamayadi?","760 mm sim ust nima?","Barometr nima?","Aneroid nima?","Altmetr nima?","Suyuqlik quyilgan idishning usti ochiq bo'lsa idish tubiga beradigan bosimi qanday topiladi?","1 kg/sm^2 necha Pa?","130 mm.sim.ust necha Pa?","Atmosfera bosimining balandlikka bog'liqlik grafigi qanday?"]
+
+arximed_kuchi = ["Arximed kuchi nima? Arximed qonuni ta'rifi - ?","Jismning cho'kish sharti - ?","Jismning qalqib chiqish sharti qanday?","Jismning to'la botgan holda suzish sharti qanday?","Ko'taruvchi kuch nima? U qachon manfiy/musbat/0 bo'ladi?","Jismning suyuqlikka botgan qismini topish formulasi qanday?","Suyuqlikda Arximed va og'irlik kuchi ta'sirida harakatlanayotgan jismning tezlanishi qanday topiladi?","Kemalarning vater chizig'i nima?","Areometr chizig'i nima?","Kema daryodan dengizga chiqqanda uning suvga botishi qanday o'zgaradi?","Suv sirtida suzayotgan yog'och bo'lakchasi suvga botirilsa, yog'och - Yer tizimining potensial energiyasi qanday o'zgaradi?"]
+
+bernulli = ["Suyuqlik oqimining uzluksizlik tenglamasi nima?","Suyuqlikning naydagi harakati qonunini kim kashf etgan?","Bernulli qonuni formulasi va ta'rifi - ?","Gorizontal bo'lmagan quvur uchun Bernulli tenglamasi qanday?","Nayning qaysi qismida bosim katta bo'ladi?","Torichelli tenglamasi - ?","Quvurdan oqib chiqqan suyuqlik hajmi va massasini topish formulalari qanday?","XBS dagi asosiy birliklar - ?","Samalyotning uchishi qaysi qonunga asoslangan?","Yerdan ko'tarilishda samalyotning shamol yo'nalishi bo'yicha uchishi afzalroqmi yoki unga qarshi?"]
+
+suyuqlik_gazlar_mexanikasi = bosim + paskal_qonuni + gidrostatik_bosim + atmosfera_bosimi + arximed_kuchi + bernulli
 
 
 # ---| [5] MOLEKULYAR FIZIKA \---
 
 
-#
+mkn_asoslari = ["MKN ning asosiy 3 qoidasi - ?","Massa atom birligi - ?","Modda miqdori nima?","Avogadro soni qanday son?","Molyar massa nima?","Bitta molekula massasi - ?","Molekulalar sonini topish formulalari - ?","Modda miqdorini topish formulalari - ?","Molekula o'lchami qanday topiladi?","Molekulalar konsentratsiyasi - ?","Gazlarni ideal deb hisoblash uchun nimalarni hisobga olmaslik kerak?"]
+
+molekulalar_harakati = ["Gazlarda/Suyuqliklarda/Qattiq jismlarda molekulalar o'zaro ta'sir potensial va kinetik energiyasi qanday munosabatda bo'ladi?","Gaz molekulalari orasidagi masofa qanday topiladi?","Broun harakati. U temperaturaga qanday bog'liq?","Diffuziya hodisasi nima?","Gazlarda/Suyuqliklarda/Qattiq jismlarda diffuziya","Erkin yugurishning o'rtacha masofasi qancha?","Nima uchun temperatura ko'tarilishi bilan broun harakatining jadalligi ortadi?","Nima uchun ancha mayda zarralarda broun harakati juda tez, yirik zarralarda esa zo'rg'a seziladi?"]
+
+mkn_asosiy_tenglamasi = ["Ideal gaz bosimi uchun MKN ning asosiy tenglamasini tushuntiring.","Dalton qonuni - ?","Parsial bosim nima?","Ideal gaz zichligini topish - ?",'Molyar hajm nima?',"Agar gazli idish ichidagi molekulalarning o'zaro tortishish kuchi birdan yo'qolsa, idishdagi bosim qanday o'zgargan bo'ladi?"]
+
+temperatura = ["Temperatura nima?","Temperaturaning Selsiy va Kelvin shkalalari - ?","Termodinamik muvozanat nima?","Absolyut nol temperatura nima?","Temperatura va molekulalarning o'rtacha kinetik energiyasi o'zaro bog'liqligi qanday?","Gaz molekulalarining o'rtacha kvadratik tezligi - ?","Gaz molekulalari o'rtacha kvadratik tezlik temperaturaga bog'liq grafigi qanday?"]
+
+klapeyron_izoxorabaraterma = ["Klapeyron tenglamasi nima?","Bolsman doimiysi nima?","Boyl-Marriot qonuni nima?","Izotermik jarayon va izoterma - ?","Izotermik jarayonda bosimning zichlikka bog'liqligi","Gey-Lyussak qonuni nima?","Izobarik jarayon va izobara - ?","Termik koeffitsiyent bosim uchun - ?","Sharl qonuni - ?","Izoxorik jarayon va izoterma - ?","Termik koeffitsient hajm uchun - ?","Mendeleyev-Klapeyron tenglamasi nima?","Universal gaz doimiysi + birlig - ?","Ideal gaz holat tenglamasi nima?","Gazning asosiy parametrlari - ?","Normal sharoitda bosim va temperatura nima?","Avogadro qonuni nima?","Ideal gaz holat tenglamasidan zichlik/modda miqdori qanday topiladi?","Bir xil bosim va temperaturada quruq havoning zichligi kattami yoki nam havonikimi?"]
+
+molekulyar_fizika = mkn_asoslari + molekulalar_harakati + mkn_asosiy_tenglamasi + temperatura + klapeyron_izoxorabaraterma
 
 
 # ---| [6] TERMODINAMIKA \---
@@ -223,7 +244,7 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 #***********************************************
 #***********************************************
 
-savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki + tebranishlar + qattiq_jism_mexanikasi + termodinamika
+savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki + tebranishlar + qattiq_jism_mexanikasi + termodinamika + molekulyar_fizika + suyuqlik_gazlar_mexanikasi
 true_count = 0
 false_count = 0
 test = 3
