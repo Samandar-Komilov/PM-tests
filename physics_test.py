@@ -39,7 +39,21 @@ import random
 # ---| [7] QATTIQ VA SUYUQ JISMLAR MEXANIKASI \---
 
 
-#
+qaynash = ["Qaynash nima?","Qaynash temperaturasi va qaynash nuqtasi nima?","Qaynash sodir bo'lishiga sabab nima?","Qaynash bosim bilan qanday bog'langan?"]
+
+buglanish = ["Bug' hosil bo'lishi va bug'lanish nima?","Kondensatsiya va sublimatsiya nima?","Solishtirma bug'lanish issiqligi nima?","Bug'lanish intensivligi (tezligi) nimaga bog'liq?","Uzun va tor bo'g'izli sferik kolbaga to'ldirib issiq suv qo'yilgan. Suv soviganda uning kolba tubiga bosimi qanday o'zgaradi?"]
+
+toyingan_bug = ["To'yingan bug' nima?","To'yinmagan bug' nima?","Dinamik muvozanat nima?","To'yingan bug' Mendeleyev-Klapeyron tenglamasiga bo'ysunadimi?","Kritik temperatura nima?","Gazlarni qachon suyuqlikka aylantirish mumkin?","Silindrda porshen ostida o'z suyuqligi bilan muvozanatda turgan to'yingan bug'ni siqsak qanday hodisa ro'y beradi?","Moddaga tegishli bo'lgan kritik temperaturadan yuqori temperaturada u qanday agregat holatda bo'ladi?","O'zgarmas temperaturada to'yingan bug'ning bosimi hajmga qanday bog'liq?"]
+
+havo_namligi = ["Namlik nima?","Absolyut namlik va uning birligi nima?","Nisbiy namlik va uning birligi nima?","Shudring nuqtasi nima?","Lambrext gigrometri va uning ishlash prinsipi","Inson o'zini yaxshi his qiladigan nisbiy namlik qanday?","Psixometr va uning ishlash prinsipi qanday?","Psixometrda quruq va nam termometrlar ko'rsatishlari farqi ortsa nisbiy namlik qanday o'zgaradi?","Temperatura ortishi bilan havoning absolyut va nisbiy namligi qanday o'zgaradi?"]
+
+sirt_taranglik_xollash_kapillarlar = ["Sirt taranglik kuchi nima?","Sirt taranglik koeffitsiyentining ikki ta'rifi va birligi - ?","Tomchilar soni qanday topiladi?","Sovun pufagidagi qo'shimcha bosim qanday topiladi?","Sovun pufagi sirtining yuzi o'zgarishi natijasida bajarilgan ish qanday topiladi?","Xo'llash nima?","Xo'llamaslik nima?","Xo'llash burchagi nima?","Kapillar hodisalar - ?","Laplas formulasi nima?","Qo'shimcha bosim qachon manfiy bo'ladi?","Kapillarlarda suyuqlikning ko'tarilish balandligi qanday?","Kapillarlik hodisasining qo'llanilish sohasi qanday?","Ikki parallel plastinkada suyuqlikning ko'tarilish balandligi qanday?","Qattiq jismlarning qanday turlari mavjud?","Kristall/Amorf jismlarning xususiyati qanday?","Polikristall jismlar nima?","Kristallarning 2 turi","Qattiq holatdan suyuq holatga [Suyuqdan qattiqqa o'tsachi?] o'tishi jarayonida amorf jismning temperaturasi qanday o'zgaradi?"]
+
+erish_qotish = ["Erish deb nimaga aytiladi?","Solishtirma erish issiqligi nima?","Modda eriganda hajmi o'zgaradimi?","Erish temperaturasining bosimga bog'liqligi qanday?","Modda qattiq/suyuq holatdan suyuq/qattiq holatga o'tmoqda, bunda uning ichki energiyasi va temperaturasi qanday o'zgaradi?","Suv temperaturasi 0 C dan 4 C gacha isitilsa, uning hajmi va zichligi qanday o'zgaradi?","Suv muzlashi davomida energiya yutiladimi yoki ajraladimi?"]
+
+qattiq_jism_mexanikasi = ["Reaksiya kuchi nima?","Deformatsiya nima?","Absolyut deformatsiya nima?","Nisbiy deformatsiya nima?","Elastik deformatsiya nima?","Plastik deformatsiya nima?","Siljish deformatsiyasi nima?","Buralish deformatsiyasi nima?","Mexanik kuchlanish nima?","Yung moduli nima?","Oquvchanlik chegarasi nima?","Proporsionallik darajasi nima?","Elastik deformatsiya darajasi nima?","Namunaning uzilishi nima?","Mo'rt jismlar - ?","Elastiklik kuchi va uning yo'nalishi - ?","Guk qonuni va uning ta'rifi qanday?","Guk qonunidagi '-' ishora ma'nosi nima?","Bikirlik nima?","Yung moduli orqali bikirlikni topish formulasi qanday?","Elastiklik kuchining absolyut uzayishiga bog'liqlik grafigi qanday? Undan bikrlik qanday topiladi?","Yung moduli birligini XBS dagi asosiy birliklar orqali ifodalang.","Qattiq jismlarning chiziqli/hajmiy kengayish koeffitsiyenti nima?","Tirqishi bor metall halqa isitilmoqda, bunda tirqish kengligi qanday o'zgaradi?"]
+
+qattiq_suyuq_jism_mexanikasi = qaynash + buglanish + toyingan_bug + havo_namligi + sirt_taranglik_xollash_kapillarlar + erish_qotish + qattiq_jism_mexanikasi
 
 
 # ---| [8] TEBRANISHLAR \---
@@ -58,7 +72,7 @@ tolqinlar = ["To'lqinlar nima?","Bo'ylama to'lqin nima? Misollar keltiring.","Ko
 
 tovush_tolqinlari = ["Tovush to'lqinlariga misollar keltiring.","Akustika fizikaning qanday bo'limi?","Tovush to'lqinlari chastotasi qanday oraliqda joylashgan?","Tovush nimadan paydo bo'ladi?","Gazlardan qanday to'lqinlar tarqaladi?","Havodagi tovush to'lqinlari qanday to'lqin?","Tovush to'lqinlarining tezligi qanday moddalarda eng katta?","Tovush intensivligi yoki tovush kuchi nima?","Tovush bosimi nima?","Tovush bosimi o'rtacha hisobda necha Pa?","Tovush qattiqligi nimaga bog'liq?","Aks sado nima?","Tovush lokatsiyasi nima?","Tovush tembri nima?","Dopler effekti nima?","Radiolokatordan obyektgacha masofa qanday aniqlanadi?","Tovush bir muhitdan boshqasiga o'tganida qanday kattalik o'zgarmaydi?","Tovush balandligi nimaga bog'liq?","Vakuumda tovush yuzaga keladimi?","Tovushni yuzaga keltirib, uni sezishni qanday shartlari mavjud?","Gazlarda tovush tezligi temperaturaga qanday bog'liq?","G'ovak jismlarda tovush qanday tarqaladi?","Musiqiy ton nima?","Tovushning asosiy toni nima?","Oberton nima?","Shovqin nima?","Tovush energiyasi amplituda va chastotaga qanday bog'liq?","Tovush balandligi nima?","Tovush intensivligi birligi nima?","Inson qulog'i seza oladigan intensivlik qancha?","Intensivlik masofaga qanday bog'liq?","Ultratovush/Infratovush to'lqinlari diapazoni qanday?","Suyuqlik/Gazlardagi ultratovush to'lqinlari bo'ylamami yoki ko'ndalang?","Yerdan 100 000 km uzoqlikdagi sun'iy yo'ldosh portladi. Uning ovozi Yerga eshitiladimi?","Marsda portlash sodir bo'ldi. Uning ovozi Yerga eshitiladimi?"]
 
-tebranishlar = mexanik_tebranishlar
+tebranishlar = mexanik_tebranishlar + matematik_mayatnik + prujinali_mayatnik + garmonik_tebranishlar + erkin_va_majburiy_tebranishlar + tolqinlar + tovush_tolqinlari
 
 
 # ---| [9] ELEKTROSTATIKA \---
@@ -197,7 +211,7 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 #***********************************************
 #***********************************************
 
-savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki
+savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki + tebranishlar
 true_count = 0
 false_count = 0
 test = 30
