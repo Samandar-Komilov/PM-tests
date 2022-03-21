@@ -33,7 +33,19 @@ import random
 # ---| [6] TERMODINAMIKA \---
 
 
-#
+ichki_energiya = ["Termodinamik sistema nima?","Termodinamik jarayon nima?","Molekulalarning erkinlik darajasi nima?","Bir/Ikki/Uch atomli gazlarning erkinlik darajasi", "Ichki energiya va birligi nima?","Ichki energiya o'zgarishi nima?"]
+
+issiqlik_miqdori = ["Quyoshdan Yerga qanday yo'l bilan energiya uzatiladi?","Konveksiya nima? (Issiqlik miqdori mavzusida)","Issiqlik o'tkazuvchanlik nima?","Issiqlik uzatish yoki almashinish nima?","Issiqlik miqdorini tushuntiring.","Solishtirma issiqlik sig'imi va birligi nima?","Solishtirma issiqlik sig'imi va birligi qanday? XBS orqali ifodalang.","Kalorometrning vazifasi nima?"]
+
+yoqilgining_yonish_issiqligi = ["Yoqilg'i vositasida ishlovchi dvigatelning FIK si qanday topiladi?","Yoqilg'ining yonishi natijasida ajralib chiqqan issiqlik miqdori qanday?","Yoqilg'ining solishtirma yonish issiqligi nima?","Yoqilg'ining solishtirma yonish issiqligi birligini XBS dagi birliklar orqali ifodalang."]
+
+issiqlik_balansi_tenglamasi = ["Issiqlik balansi tenglamasi nima?","Suyuqlik aralashmasining temperaturasi nima?","Issiqlik balansi tenglamasi qaysi qonunga asoslangan?"]
+
+termodinamika_Iqonuni_ish = ["Gaz hajmining o'zgarishida bajarilgan ish qanday?","Mendeleyev-Klapeyron tenglamasi yordamida bajarilgan ish qanday?","Universal gaz doimiysining ta'rifi qanday?","Yopiq sistema nima?","Termodinamikaning I qonuni nima?","Termodinamikaning I qonuni qaysi qonunga asoslangan?","Birinchi tur abadiy dvigatel nima?","Izotermik jarayon uchun termodinamikaning I qonuni qanday?","Izotermik jarayonda solishtirma issiqlik sig'imi nimaga teng?","Yengil harakatlanadigan porshendagi ish va ichki energiya nima?","Izobarik jarayon uchun Termodinamika I qonuni","Izobarik jarayonda sistemaga berilgan issiqlik miqdorining qancha qismi ichki energiyaning o'zgarishiga sarf bo'ladi?","Izobarik jarayon uchun solishtirma issiqlik sig'imi nimaga teng?","Izoxorik jarayon uchun termodinamikaning birinchi qonuni/solishtirma issiqlik sig'imi nimaga teng?","Adiabatik jarayon nima?","Adiabatik jarayon uchun termodinamikaning I qonuni qanday?","Puasson tenglamasi yoki adiabata tenglamasi nima?","O'zgarmas hajmdagi solishtirma issiqlik sig'imi nima uchun o'zgarmas bosimdagi solishtirma issiqlik sig'imidan kichik?","Gaz adiabatik siqilganda temperaturasi qanday o'zgaradi?","Agar ideal gaz tez siqilsa uning temperaturasi nima sababdan ortadi?","Adiabatik jarayon qaysi idishlarda amalga oshiriladi: kolbadami yoki kallorometrdami?","Gaz PV^2=const tenglamaga muvofiq siqilmoqda, uning temperaturasi qanday o'zgaradi?","Gaz V/T^2 = const tenglamaga muvofiq sovitilmoqda, uning bosimi qanday o'zgaradi?","Gazning bosimi root_P/T = const tenglamaga muvofiq pasaymoqda. Bunda uning hajmi qanday o'zgaradi?"]
+
+issiqlik_dvigatellari = ["Qaytar va qaytmas jarayonlar nima?","Issiq jismdan sovuq jismga issiqlik uzatilishi bilan ro'y beradigan jarayon qanday jarayonga kiradi?","Issiqlik mashina yoki issiqlik dvigateli nima?","Issiqlik dvigatelining asosiy qismlari nima?","Real/Ideal issiqlik mashinasining FIKsi qanday?","Karno sikli. Karno formulasi - ?","Real issiqlik mashinasining max FIKsi - ?","Issiqlik mashinasining ishlash prinsipi qanday?","Sovitkich mashinasining sovitish koeffitsiyenti qanday topiladi?"]
+
+termodinamika = ichki_energiya + issiqlik_miqdori + yoqilgining_yonish_issiqligi + issiqlik_balansi_tenglamasi + termodinamika_Iqonuni_ish + issiqlik_dvigatellari
 
 
 # ---| [7] QATTIQ VA SUYUQ JISMLAR MEXANIKASI \---
@@ -211,10 +223,10 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 #***********************************************
 #***********************************************
 
-savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki + tebranishlar
+savollar = turli_muhitlarda_elektr_toki + elektromagnit_hodisalar + elektrostatika + ozgarmas_elektr_toki + tebranishlar + qattiq_jism_mexanikasi + termodinamika
 true_count = 0
 false_count = 0
-test = 30
+test = 3
 
 for i in range(test):
     x = random.randint(0,len(savollar)-1)
