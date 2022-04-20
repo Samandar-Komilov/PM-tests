@@ -1,3 +1,3 @@
 # PM-tests
 
-This repository is used to reserve my Physics and Mathematics tests!
+Maths and physics tests that can be used offline in Uzbek language!
