@@ -245,13 +245,15 @@ magnit_oqimi = ["Magnit oqimi ta'rifi va birligi?","Yopiq sirt orqali magnit oqi
 
 muhit_magnit_singdiruvchanligi = ["Nisbiy magnit singdiruvchanlik nima?","Diamagnetiklar nima?","Paramagnetiklar nima?","Ferromagnetiklar","Diamagnetiklar xususiyati temperaturaga qanday bog'liq?","Paramagnetiklar xususiyati temperaturaga qanday bog'liq?", "Magnit lentalari va disklarga axborot yozish nimaga asoslangan?","Magnit lentalari va disklari qanday tuzilgan?","Oltin va kumush magnit maydonni zaiflashtiradimi yoki kuchaytiradimi?","Kobalt va nikel magnit maydonni zaiflashtiradimi yoki kuchaytiradimi?","Aluminiy va qalay magnit maydonni zaiflashtiradimi yoki kuchaytiradimi?","Kyuri temperaturasi nima?","Ferromagnit moddalar Kyuri temperaturasidan past temperaturada qanday moddaga aylanadi?","Ferromagnit moddalar Kyuri temperaturasidan yuqori temperaturada qanday moddaga aylanadi?","Temir uchun Kyuri nuqtasi nimaga teng?"]
 
-elektromagnit_induksiya = []
+# 23 Apr, 2022, 18:56
 
-lens_qoidasi_ozinduksiya = []
+elektromagnit_induksiya = ["Induksion tok nima?","Elektromagnit induksiya hodisasi deb nimaga aytiladi?","Elektr o'lchov asboblarining ishlash prinsipi nimaga asoslangan?","Elektromagnit induksiya qonuni nima?","Induksion EYK nima?","Uyurmaviy maydon nima?","Fuko toki nima?","e[i]=vBl*sin(a) formulani tushuntiring.","e[i]=wNBS*sin(wt) formulani tushuntiring.","Tokli o'tkazgichni magnit maydonda koçhirishda bajarilgan ish qanday topiladi?"]
 
-induktivlik = []
+lens_qoidasi_ozinduksiya = ["Lens qoidasi deb nimaga aytiladi?","Magnitning janubiy/shimoliy qutbi berk konturga yaqinlashtirilsa/uzoqlashtirilsa, berk kontur qanday harakatlanadi?","O'zinduksiya hodisasi deb nimaga aytiladi?","O'zaro induksiya hodisasi nima?","O'zinduksiya EYK qanday topiladi?","Lens qoidasi qanday saqlanish qonuni bilan bog'liq?"]
 
-magnit_maydon_energiyasi = []
+induktivlik = ["Induktivlik deb nimaga aytiladi?","1 Henry ta'rifi qanday?","Solenoid induktivligi qanday parametrlarga bog'liq?","L1 va L2 induktiv g'altaklar ketma-ket/parallel ulansa, umumiy induktivlik nimaga teng?","dI/dt qanday kattalik?","Magnit oqimining o'zgarish tezligi berilgan holda gáltakning o'ramlar soni qanday topiladi?","Induktivlik tok kuchiga qanday bog'liq? Birligini XBS orqali ifodalang."]
+
+magnit_maydon_energiyasi = ["Magnit maydon energiyasini topish formulalarini ayting.","Magnit maydon energiya zichligi nima va u qanday topiladi?"]
 
 elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasir_qiluvchi_kuch + bio_salvar_laplas_qonuni + lorens_kuchi + magnit_oqimi + muhit_magnit_singdiruvchanligi + elektromagnit_induksiya + lens_qoidasi_ozinduksiya + induktivlik + magnit_maydon_energiyasi
 
@@ -259,8 +261,25 @@ elektromagnit_hodisalar = magnit_maydon + magnit_maydonda_tokli_otkazgichga_tasi
 # ---| [13] ELEKTROMAGNIT TEBRANISHLAR \---
 
 
-#
+tebranish_konturi_davr_chastota = ["Elektromagnit tebranishlar deb nimaga aytiladi?","Tebranish konturi nima?","Tebranish konturining vazifasi nima?","Tomson formulasi qanday?","Tebranish konturida kondensator sigími ortsa chastota qanday o'zgaradi?","Siklik chastota deb nimaga aytiladi?"]
 
+tebranish_konturi_energiya_saqlanishi = ["Elektromagnit tebranishlarda qanday energiyalar bir-biriga aylanadi? Ular uchun saqlanish qonuni qanday?","Elektromagnit tebranishlarda kondensator maksimal zaryadi qanday topiladi?","Tebranish konturida gáltakdagi maksimal tok qanday topiladi?","Tebranish konturida kondensatordagi maksimal kuchlanish qanday topiladi?","Aktiv qarshiligi bo'lgan tebranish konturida qanday tebranishlar hosil bo'ladi?","Tebranish konturining aktiv qarshiligi ortsa/kamaysa, uning xususiy tebranishlari qanday o'zgaradi?"]
+
+ozgaruvchan_elektr_toki = ["O'zgaruvchan tok deb nimaga aytiladi?","O'zgaruvchan tok fazasi qanday topiladi?","Tokning effektiv yoki ta'sir etuvchi qiymati nima?","Kuchlanishning effektiv yoki ta'sir etuvchi qiymati nima?","Induksion tok generatori nima?","Generator qanday qismlardan tashkil topgan?","Rotor deb nimaga aytiladi?","O'zbekistonda qanday chastotali o'zgaruvchan tokdan foydalaniladi?","Generator rotorining aylanish chastotasi o'zgaruvchan tok chastotasiga bog'liqmi?"]
+
+aktiv_qarshilik = ["Aktiv qarshilik deb nimaga aytiladi?","Aktiv qarshilikda o'zgaruvchan tok quvvati qanday topiladi?","Aktiv qarshilikda tok kuchi va kuchlanish orasidagi fazalar farqi nimaga teng?","Aktiv qarshilikda o'zgaruvchan tokning bajargan ishi qanday topiladi?","Aktiv qarshilikda ajralgan issiqlik miqdori qanday topiladi?","Aktiv yuklama/nagruzka deb nimaga aytiladi?","Aktiv qarshilikning chastotaga bog'liqlik grafigini chizing."]
+
+induktiv_qarshilik = ["Induktiv qarshilik deb nimaga aytiladi?","Induktiv qarshilikda o'zgaruvchan tok quvvati qanday topiladi?","Induktiv qarshilikda tok kuchi va kuchlanish orasidagi fazalar farqi nimaga teng?","Induktiv qarshilikda o'zgaruvchan tokning bajargan ishi qanday topiladi?","Induktiv qarshilikda ajralgan issiqlik miqdori qanday topiladi?","Induktiv qarshilikning chastotaga bog'liqlik grafigini chizing.","Induktiv qarshilikning davrga bog'liqlik grafigini chizing."]
+
+sigim_qarshilik = ["Sig'im qarshilik deb nimaga aytiladi?","Sig'im qarshilikda o'zgaruvchan tok quvvati qanday topiladi?","Sig'im qarshilikda tok kuchi va kuchlanish orasidagi fazalar farqi nimaga teng?","Sig'im qarshilikda o'zgaruvchan tokning bajargan ishi qanday topiladi?","Sig'im qarshilikda ajralgan issiqlik miqdori qanday topiladi?","Sig'im qarshilikning chastotaga bog'liqlik grafigini chizing.","Sig'im qarshilikning davrga bog'liqlik grafigini chizing."]
+
+umumiy_qarshilik = ["O'zgaruvchan tokda to'la qarshilik qanday topiladi?","Quvvat koeffitsiyenti qarshiliklar berilgan holida qanday topiladi?","Quvvat koeffitsiyenti nima?","Induktiv g'altagi, kondensator va aktiv qarshilik o'zgaruvchan tok zanjiriga ketma-ket ulangan. Rezonans yuz berishi uchun qanday shart bajarilishi kerak?","Induktiv g'altagi, kondensator va aktiv qarshilik o'zgaruvchan tok zanjiriga ketma-ket ulangan. Rezonans sodir bo'lganda bu zanjirdagi tok va kuchlanish orasidagi orasidagi fazalar farqi qanday bo'ladi?"]
+
+quvvat_koeffitsiyenti = ["O'zgaruvchan tokda to'la qarshilik qanday topiladi?","Quvvat koeffitsiyenti qarshiliklar berilgan holatda qanday topiladi?","Quvvat koeffitsiyenti nima?","O'zgaruvchan tok zanjirida to'la quvvat nimaga teng?","O'zgaruvchan tok generatori nima?","Elektrodvigatellar nima?","Kondensator/Induktiv g'altak o'zgarmas tokka qanday qarshilik ko'rsatadi?","Induktiv g'altak va kondensatorning quvvat koeffitsiyentiga ta'siri qanday?"]
+
+transformator = ["Transformator deb nimaga aytiladi? Uning vazifasi nima?","Transformatsiya koeffitsiyenti nima?","Pasaytiruvchi/Kuchaytiruvchi transformatorlar nima?","Transformatorning ishlash prinsipi nimaga asoslangan?","Transformatorning FIK qanday topiladi?","Transformator o'zgaruvchan tok chastotasini qanday o'zgartiradi?","Transformatorda birlamchi va ikkilamchi g'altaklar nima?","Transformator g'altaklari simi ko'ndalang kesimining uning FIK ga ta'siri qanday?","O'zgaruvchan tokda kuchlanish nima maqsadda transformator yordamida oshiriladi?","Transformatorning ikkinchi chulg'amidan o'tayotgan tok oshishi bilan birinchi chulg'amga ketma-ket ulangan ampermetr ko'rsatkichi qanday o'zgaradi?","Pasaytiruvchi/Kuchaytiruvchi transformatorda qaysi chulg'amdagi simning kesimi katta bo'lishi kerak?","Nima uchun transformator ishlaganda g'ing'illagan tovush chiqadi?"]
+
+elektromagnit_tebranish = tebranish_konturi_davr_chastota + tebranish_konturi_energiya_saqlanishi + ozgaruvchan_elektr_toki + aktiv_qarshilik + induktiv_qarshilik + sigim_qarshilik + umumiy_qarshilik + quvvat_koeffitsiyenti + transformator
 
 # ---| [14] GEOMETRIK OPTIKA \---
 
